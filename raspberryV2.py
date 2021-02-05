@@ -1,3 +1,5 @@
+#Versie 2.0 omniflor
+
 import soco
 from time import sleep
 from soco.discovery import by_name
@@ -90,7 +92,7 @@ while True:
             Meststoffen.volume = 31
         except:
             pass
-        
+
         # muziek van de master instellen die de slaves ook zullen spelen
         all_speakers[master_speaker].play_uri(uri="http://icecast.vrtcdn.be/mnm-high.mp3",
                                               title="MNM", start=True, force_radio=False)

@@ -59,14 +59,38 @@ while True:
         {'Cabrio Serre 2': 41, 'Cabrio Serre 1': 41, 'Winkel Snijbloemen': 31,
         'Serre Orchideen': 31, 'Winkel Zijdebloemen': 31, 'Meststoffen': 31}
         """
-        Cabrio_Serre_1.volume = 41
-        Cabrio_Serre_2.volume = 41
-        Winkel_Snijbloemen.volume = 31
-        Serre_Orchideen.volume = 31
-        Winkel_Zijdebloemen.volume = 31
-        Meststoffen.volume = 31
 
+        # try except voor errors
+        try:
+            Cabrio_Serre_1.volume = 41
+        except:
+            pass
 
+        try:
+            Cabrio_Serre_2.volume = 41
+        except:
+            pass
+
+        try:
+            Winkel_Snijbloemen.volume = 31
+        except:
+            pass
+
+        try:
+            Serre_Orchideen.volume = 31
+        except:
+            pass
+
+        try:
+            Winkel_Zijdebloemen.volume = 31
+        except:
+            pass
+
+        try:
+            Meststoffen.volume = 31
+        except:
+            pass
+        
         # muziek van de master instellen die de slaves ook zullen spelen
         all_speakers[master_speaker].play_uri(uri="http://icecast.vrtcdn.be/mnm-high.mp3",
                                               title="MNM", start=True, force_radio=False)

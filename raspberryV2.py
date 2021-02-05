@@ -66,32 +66,32 @@ while True:
         try:
             Cabrio_Serre_1.volume = 41
         except:
-            pass
+            print("BOX niet gevonden.")
 
         try:
             Cabrio_Serre_2.volume = 41
         except:
-            pass
+            print("BOX niet gevonden.")
 
         try:
             Winkel_Snijbloemen.volume = 31
         except:
-            pass
+            print("BOX niet gevonden.")
 
         try:
             Serre_Orchideen.volume = 31
         except:
-            pass
+            print("BOX niet gevonden.")
 
         try:
             Winkel_Zijdebloemen.volume = 31
         except:
-            pass
+            print("BOX niet gevonden.")
 
         try:
             Meststoffen.volume = 31
         except:
-            pass
+            print("BOX niet gevonden.")
 
         # muziek van de master instellen die de slaves ook zullen spelen
         all_speakers[master_speaker].play_uri(uri="http://icecast.vrtcdn.be/mnm-high.mp3",
